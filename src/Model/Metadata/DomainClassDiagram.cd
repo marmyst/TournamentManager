@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TournamentManager.Model.Domain.Address">
+    <Position X="9" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAIAAgAAAAAIAAAAAAAAAAIAAAABAAIABAAAAAA=</HashCode>
+      <FileName>Domain\Address.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TournamentManager.Model.Domain.Competition">
+    <Position X="20.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Competition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TournamentManager.Model.Domain.Contestant">
+    <Position X="15.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAACAA=</HashCode>
+      <FileName>Domain\Contestant.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="License" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TournamentManager.Model.Domain.Entity">
+    <Position X="16" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAAAAAAACAgAAAAAAAAA=</HashCode>
+      <FileName>Domain\Entity.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="PreviousAddresses" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="TournamentManager.Model.Domain.Judge">
+    <Position X="10.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Domain\Judge.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="License" />
+      <Property Name="Class" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TournamentManager.Model.Domain.License">
+    <Position X="13.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\License.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TournamentManager.Model.Domain.Organization">
+    <Position X="16" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Organization.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TournamentManager.Model.Domain.Person">
+    <Position X="13.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>Domain\Person.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TournamentManager.Model.Domain.PreviousAddress">
+    <Position X="11.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACEAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\PreviousAddress.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TournamentManager.Model.Domain.ShootingRange">
+    <Position X="20" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\ShootingRange.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TournamentManager.Model.Domain.SportsClub">
+    <Position X="16" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>Domain\SportsClub.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TournamentManager.Model.Domain.Tournament">
+    <Position X="17.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACIAAAAAAAAAAAAAAAAAQABACIAAABAAAAAAAAACA=</HashCode>
+      <FileName>Domain\Tournament.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CalendarType" />
+    </ShowAsAssociation>
+  </Class>
+  <Enum Name="TournamentManager.Model.Domain.JudgeClass">
+    <Position X="8.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\JudgeClass.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TournamentManager.Model.Domain.TournamentCalendarType">
+    <Position X="17.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Domain\TournamentCalendarType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

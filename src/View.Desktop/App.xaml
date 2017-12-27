@@ -1,0 +1,15 @@
+﻿<Application x:Class="TournamentManager.View.Desktop.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:TournamentManager.View.Desktop"
+             xmlns:System="clr-namespace:System;assembly=mscorlib"
+             xmlns:DataAccess="clr-namespace:TournamentManager.Model.DataAccess;assembly=TournamentManager.Model"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ObjectDataProvider x:Key="TurnamentCalendarTypes" MethodName="GetValues" ObjectType="{x:Type System:Enum}">
+            <ObjectDataProvider.MethodParameters>
+                <x:Type TypeName="DataAccess:TurnamentCalendarType" />
+            </ObjectDataProvider.MethodParameters>
+        </ObjectDataProvider>
+    </Application.Resources>
+</Application>
