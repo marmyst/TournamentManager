@@ -4,8 +4,13 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TournamentManager.View.Desktop"
+        xmlns:vm="clr-namespace:TournamentManager.Model.ViewModels;assembly=TournamentManager.Model"
+        xmlns:controls="clr-namespace:TournamentManager.View.Desktop.Controls"
         mc:Ignorable="d"
         Title="Turnament Manager" Height="350" Width="525">
+    <Window.DataContext>
+        <vm:MainWindowViewModel />
+    </Window.DataContext>
     <DockPanel>
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="File" />
@@ -16,7 +21,9 @@
             <TextBlock>Status bar</TextBlock>
         </StatusBar>
         <TabControl TabStripPlacement="Left">
-            <TabItem Header="Item1" />
+            <TabItem Header="Item1">
+                <controls:TurnamentCreator DataContext="{Binding Path=TournamentCreatorViewModel}"></controls:TurnamentCreator>
+            </TabItem>
             <TabItem Header="Item1" />
             <TabItem Header="Item1" />
         </TabControl>
