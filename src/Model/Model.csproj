@@ -64,6 +64,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Domain\CompetitionResults.cs" />
+    <Compile Include="Domain\CompetitionType.cs" />
     <Compile Include="DataAccess\Mappings\AddressMap.cs" />
     <Compile Include="DataAccess\Mappings\CompetitionMap.cs" />
     <Compile Include="DataAccess\Mappings\ContestantMap.cs" />
@@ -93,6 +95,7 @@
     <Compile Include="Domain\Tournament.cs" />
     <Compile Include="Domain\TournamentCalendarType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Domain\TargetType.cs" />
     <Compile Include="ViewModels\TournamentCreatorViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -100,7 +103,9 @@
     <None Include="Metadata\DomainClassDiagram.cd" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Services\" />
+  </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>

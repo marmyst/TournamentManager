@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="TournamentManager.Model.Domain.Address">
-    <Position X="9" Y="1.5" Width="1.5" />
+    <Position X="8.5" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAIAAgAAAAAIAAAAAAAAAAIAAAABAAIABAAAAAA=</HashCode>
       <FileName>Domain\Address.cs</FileName>
@@ -9,10 +9,22 @@
   </Class>
   <Class Name="TournamentManager.Model.Domain.Competition">
     <Position X="20.5" Y="5.75" Width="1.5" />
+    <AssociationLine Name="Results" Type="TournamentManager.Model.Domain.CompetitionResults" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="22" Y="7.125" />
+        <Point X="22.625" Y="7.125" />
+        <Point X="22.625" Y="9.25" />
+      </Path>
+    </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAACACAAAAABAAAAQyAAAAAA=</HashCode>
       <FileName>Domain\Competition.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CompetitionType" />
+      <Property Name="TargetType" />
+      <Property Name="Results" />
+    </ShowAsAssociation>
   </Class>
   <Class Name="TournamentManager.Model.Domain.Contestant">
     <Position X="15.75" Y="7.5" Width="1.5" />
@@ -22,6 +34,7 @@
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="License" />
+      <Property Name="SportsClub" />
     </ShowAsAssociation>
   </Class>
   <Class Name="TournamentManager.Model.Domain.Entity">
@@ -30,6 +43,9 @@
       <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAAAAAAACAgAAAAAAAAA=</HashCode>
       <FileName>Domain\Entity.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Address" />
+    </ShowAsAssociation>
     <ShowAsCollectionAssociation>
       <Property Name="PreviousAddresses" />
     </ShowAsCollectionAssociation>
@@ -60,7 +76,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="TournamentManager.Model.Domain.Person">
-    <Position X="13.25" Y="4" Width="1.5" />
+    <Position X="13.25" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAQAAAA=</HashCode>
       <FileName>Domain\Person.cs</FileName>
@@ -72,6 +88,9 @@
       <HashCode>AAACEAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
       <FileName>Domain\PreviousAddress.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Address" />
+    </ShowAsAssociation>
   </Class>
   <Class Name="TournamentManager.Model.Domain.ShootingRange">
     <Position X="20" Y="4" Width="1.5" />
@@ -86,6 +105,9 @@
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
       <FileName>Domain\SportsClub.cs</FileName>
     </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Members" />
+    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="TournamentManager.Model.Domain.Tournament">
     <Position X="17.75" Y="5.5" Width="1.5" />
@@ -95,6 +117,42 @@
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="CalendarType" />
+      <Property Name="ShootingRange" />
+      <Property Name="Organizer" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Competitions" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="TournamentManager.Model.Domain.CompetitionType">
+    <Position X="23.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAAAAAAAAQAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Domain\CompetitionType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TournamentManager.Model.Domain.TargetType">
+    <Position X="23.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\TargetType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TournamentManager.Model.Domain.CompetitionResults">
+    <Position X="22" Y="9.25" Width="1.5" />
+    <AssociationLine Name="Contestant" Type="TournamentManager.Model.Domain.Contestant" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="22" Y="9.81" />
+        <Point X="16.688" Y="9.81" />
+        <Point X="16.688" Y="8.497" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAQAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\CompetitionResults.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Contestant" />
     </ShowAsAssociation>
   </Class>
   <Enum Name="TournamentManager.Model.Domain.JudgeClass">
@@ -105,9 +163,9 @@
     </TypeIdentifier>
   </Enum>
   <Enum Name="TournamentManager.Model.Domain.TournamentCalendarType">
-    <Position X="17.75" Y="7.5" Width="1.5" />
+    <Position X="20" Y="8" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAEAAAA=</HashCode>
+      <HashCode>FAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Domain\TournamentCalendarType.cs</FileName>
     </TypeIdentifier>
   </Enum>

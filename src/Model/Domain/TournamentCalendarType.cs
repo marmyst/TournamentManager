@@ -2,7 +2,7 @@
 {
     public enum TournamentCalendarType : byte
     {
-        None,
+        Other,
         WZSS,
         PZSS
     }
