@@ -12,7 +12,7 @@
     <StackPanel>
         <TextBox Text="{Binding Path=Name, Mode=TwoWay}"/>
         <TextBox Text="{Binding Path=Subname, Mode=TwoWay}"/>
-        <ComboBox ItemsSource="{Binding Source={StaticResource TurnamentCalendarTypes}}" SelectedItem="{Binding Path=CallendarType}" />
+        <!--<ComboBox ItemsSource="{Binding Source={StaticResource TurnamentCalendarTypes}}" SelectedItem="{Binding Path=CallendarType}" />-->
         <ComboBox SelectedIndex="0">
             <ComboBoxItem>Shooting range</ComboBoxItem>
         </ComboBox>
