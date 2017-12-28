@@ -9,7 +9,7 @@ namespace TournamentManager.Model.Domain
     {
         public string Name
         {
-            get => default(int);
+            get => default(string);
             set
             {
             }
@@ -17,7 +17,7 @@ namespace TournamentManager.Model.Domain
 
         public string Abbreviation
         {
-            get => default(int);
+            get => default(string);
             set
             {
             }
