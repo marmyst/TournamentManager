@@ -67,6 +67,10 @@
       <Project>{1d495b2f-deea-4199-9167-7f122b79f36f}</Project>
       <Name>Model</Name>
     </ProjectReference>
+    <ProjectReference Include="..\View.Desktop\View.Desktop.csproj">
+      <Project>{49fdc66b-fc4d-418b-bc56-2c37fc19fc68}</Project>
+      <Name>View.Desktop</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

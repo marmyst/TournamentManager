@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using TournamentManager.Model.ViewModels;
 
 namespace TournamentManager.View.Desktop
 {

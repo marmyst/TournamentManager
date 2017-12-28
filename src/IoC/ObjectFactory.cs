@@ -4,8 +4,8 @@ namespace TournamentManager.IoC
 {
     public static class ObjectFactory
     {
-        private static Container _container;
-        public static Container Container
+        private static IContainer _container;
+        public static IContainer Container
         {
             get
             {

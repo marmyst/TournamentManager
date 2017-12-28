@@ -67,6 +67,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataAccess\DataSources.cs" />
     <Compile Include="Domain\CompetitionResults.cs" />
     <Compile Include="Domain\CompetitionType.cs" />
     <Compile Include="DataAccess\Mappings\AddressMap.cs" />
@@ -103,6 +104,8 @@
     <Compile Include="Services\Test\ITestService.cs" />
     <Compile Include="Services\Test\Test2Service.cs" />
     <Compile Include="Services\Test\TestService.cs" />
+    <Compile Include="Services\TournamentEditor\ITournamentEditorService.cs" />
+    <Compile Include="ViewModels\MainWindowViewModel.cs" />
     <Compile Include="ViewModels\TournamentCreatorViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -110,7 +113,12 @@
     <None Include="Metadata\DomainClassDiagram.cd" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\IoC\IoC.csproj">
+      <Project>{3eedbaa7-bd60-4368-8394-c24fef2ca2f6}</Project>
+      <Name>IoC</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>

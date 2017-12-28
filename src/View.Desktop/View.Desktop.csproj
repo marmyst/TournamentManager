@@ -57,6 +57,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Registers\TournamentManagerRegistry.cs" />
     <Compile Include="Registers\ViewRegistry.cs" />
     <Page Include="Controls\TurnamentCreator.xaml">
       <SubType>Designer</SubType>

@@ -20,7 +20,6 @@ namespace IoC
         {
             var container = new Container(c =>
             {
-                c.AddRegistry<TournamentManagerRegistry>();
                 foreach(Registry registry in resisters)
                 {
                     c.AddRegistry(registry);

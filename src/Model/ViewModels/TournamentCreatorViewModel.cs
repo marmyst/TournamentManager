@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Windows.Input;
+using TournamentManager.IoC;
 using TournamentManager.Model.Domain;
 using TournamentManager.Model.Services.TournamentEditor;
 
@@ -79,18 +80,14 @@ namespace TournamentManager.Model.ViewModels
         
         public ICommand AddNew { get; private set; }
 
-        public TournamentCreatorViewModel() : this(new TournamentEditorService())
-        {
-
-        }
-
-        public TournamentCreatorViewModel(ITournamentEditorService tournamentEditorService)
+        public TournamentCreatorViewModel()
         {
             _turnament = new Tournament
             {
                 Name = "Turnament Name",
                 Subname = "Turnament subname"
             };
+            ITournamentEditorService tournamentEditorService = ObjectFactory.GetInstance<ITournamentEditorService>();
             AddNew = new AddTournament(tournamentEditorService);
         }
 

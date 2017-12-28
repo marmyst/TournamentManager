@@ -1,7 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using StructureMap;
 using TournamentManager.IoC;
 using TournamentManager.Model.Services.Test;
+using TournamentManager.View.Desktop.Registers;
 
 namespace IoC.Test
 {
@@ -12,7 +15,11 @@ namespace IoC.Test
         public void BootstrapTest()
         {
             var bootstrap = new Bootstrap();
-            bootstrap.Configure();
+            bootstrap.Configure(new List<Registry>
+            {
+                new TournamentManagerRegistry(),
+                new ViewRegistry()
+            });
 
             ITestService testService = ObjectFactory.GetInstance<ITestService>();
 

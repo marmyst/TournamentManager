@@ -2,6 +2,7 @@
 using StructureMap;
 using System.Collections.Generic;
 using System.Windows;
+using TournamentManager.IoC;
 using TournamentManager.View.Desktop.Registers;
 
 namespace TournamentManager.View.Desktop
@@ -16,9 +17,9 @@ namespace TournamentManager.View.Desktop
             Bootstrap bootstrap = new Bootstrap();
             bootstrap.Configure(new List<Registry>
             {
+                new TournamentManagerRegistry(),
                 new ViewRegistry()
             });
-            base.OnStartup(e);
         }
     }
 }
