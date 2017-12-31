@@ -1,5 +1,5 @@
-﻿using System.Windows;
-using TournamentManager.Model.ViewModels;
+﻿using System.Globalization;
+using System.Windows;
 
 namespace TournamentManager.View.Desktop
 {
@@ -11,6 +11,16 @@ namespace TournamentManager.View.Desktop
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void EnglishLanguage_Click(object sender, RoutedEventArgs e)
+        {
+            App.ChangeCulture(new CultureInfo("en-US"));
+        }
+
+        private void PolishLanguage_Click(object sender, RoutedEventArgs e)
+        {
+            App.ChangeCulture(new CultureInfo("pl-PL"));
         }
     }
 }

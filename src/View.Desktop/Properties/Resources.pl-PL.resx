@@ -118,24 +118,24 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Competition" xml:space="preserve">
-    <value>Competition</value>
+    <value>Konkurs</value>
   </data>
   <data name="English" xml:space="preserve">
     <value>English</value>
   </data>
   <data name="Exit" xml:space="preserve">
-    <value>Exit</value>
+    <value>Wyjście</value>
   </data>
   <data name="Language" xml:space="preserve">
-    <value>Language</value>
+    <value>Język</value>
   </data>
   <data name="Polish" xml:space="preserve">
     <value>Polski</value>
   </data>
   <data name="Tournament" xml:space="preserve">
-    <value>Tournament</value>
+    <value>Zawody</value>
   </data>
   <data name="TurnamentManager" xml:space="preserve">
-    <value>Turnament Manager</value>
+    <value>Menedżer Zawodów</value>
   </data>
 </root>

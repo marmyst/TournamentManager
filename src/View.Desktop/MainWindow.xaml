@@ -6,26 +6,29 @@
         xmlns:local="clr-namespace:TournamentManager.View.Desktop"
         xmlns:vm="clr-namespace:TournamentManager.Model.ViewModels;assembly=TournamentManager.Model"
         xmlns:controls="clr-namespace:TournamentManager.View.Desktop.Controls"
+        xmlns:p="clr-namespace:TournamentManager.View.Desktop.Properties"
         mc:Ignorable="d"
-        Title="Turnament Manager" Height="350" Width="525">
+        Title="{x:Static p:Resources.TurnamentManager}"
+        WindowState="Maximized">
     <Window.DataContext>
         <vm:MainWindowViewModel />
     </Window.DataContext>
     <DockPanel>
         <Menu DockPanel.Dock="Top">
-            <MenuItem Header="File" />
-            <MenuItem Header="About" />
-            <MenuItem Header="Exit" />
+            <MenuItem Header="{x:Static p:Resources.Language}" >
+                <MenuItem Header="{x:Static p:Resources.English}" Click="EnglishLanguage_Click" />
+                <MenuItem Header="{x:Static p:Resources.Polish}" Click="PolishLanguage_Click" />
+            </MenuItem>
+            <MenuItem Header="{x:Static p:Resources.Exit}" />
         </Menu>
         <StatusBar DockPanel.Dock="Bottom">
             <TextBlock>Status bar</TextBlock>
         </StatusBar>
         <TabControl TabStripPlacement="Left">
-            <TabItem Header="Item1">
+            <TabItem Header="{x:Static p:Resources.Tournament}">
                 <controls:TurnamentCreator DataContext="{Binding Path=TournamentCreatorViewModel}"></controls:TurnamentCreator>
             </TabItem>
-            <TabItem Header="Item1" />
-            <TabItem Header="Item1" />
+            <TabItem Header="{x:Static p:Resources.Competition}"/>
         </TabControl>
     </DockPanel>
 </Window>
